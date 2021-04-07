@@ -1,0 +1,75 @@
+<DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Papci Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="Landing.css">
+</head>
+<body>
+
+
+  <section class="sec">
+  	 <header>
+  	 	<a href="#"><img src="img/logo.png"></a>
+  	 	<ul>
+  	 		<li><a href="#">Home</a></li>
+  	 		<li><a href="#">Products</a></li>
+  	 		<li><a href="#">What's New</a></li>
+  	 		<li><a href="#">NewsLetter</a></li>
+  	 		<li><a href="#">Contact</a></li>
+  	 	</ul>
+  	 </header>
+  	 <div class="content">
+  	 	<div class="textBox">
+  	 		<h2>That's What<br/><span>I like</span></h2>
+  	 		<p>lorem ipsum doller sit amet.consti flret alit.sed so eimsod tempod indisd up labooer at doller magna aikaed.af anam medi anim vaniem .wugh fnoe attdj frofatojn brajil whi fth jgka jaghk menik lorem ipsum.</p>
+  	 		<a href="#">View All Products</a>
+  	 	</div>
+  	 	<div class="imgBox">
+  	 		<img src="Img/pepsi001.png" class="pepsi">
+  	 	</div>
+  	 </div>
+  	 <ul class="thumb">
+  	 	<li><img src="Img/pepsi001.png" onclick ="imgSlider('Img/pepsi001.png');changeBgColor('#0062be')"></li>
+  	 	<li><img src="Img/pepsi002.png"  onclick="imgSlider('Img/pepsi002.png');changeBgColor('#e60c2c')"></li>
+  	 	<li><img src="Img/pepsi003.png" onclick="imgSlider('Img/pepsi003.png');changeBgColor('#1e1e1e')"></li>
+  	 </ul>
+  	 <ul class="sci">
+  	 	<li><a href="#"><img src="Img/facebook.png"></a></li>
+  	 	<li><a href="#"><img src="Img/instagram.png"></a></li>
+  	 	<li><a href="#"><img src="Img/twitter.png"></a></li>
+  	 </ul>
+  </section>
+
+
+
+<!-- JavaScript Start -->
+<script type="text/javascript">
+	
+   function imgSlider(anything){
+   	document.querySelector('.pepsi').src = anything;
+   }
+
+   function changeBgColor(color) {
+   	    
+     const sec = document.querySelector('.sec');
+     sec.style.background=color
+
+   	   }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
